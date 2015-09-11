@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+
+        <title> EVALUATION</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2> EVALUATION </h2>
+        <form method ="GET" action ="MyServlet" oninput="amount.value=rangeInput.value; amount2.value=rangeInput2.value; amount3.value=rangeInput3.value; amount4.value=rangeInput4.value;">
+            <fieldset>
+                <legend>Teams</legend>
+                Team Name: <select name="Teams">
+                    <option value="Team 1">:Team 1 </option>
+                    <option value="Team 2">:Team 2 </option>
+                    <option value="Team 3">:Team 3 </option>
+                    <option value="Team 4">:Team 4 </option>
+                </select>
+                </fieldset>
+            
+                <fieldset>
+                <legend>Q1 Tech</legend>
+                <input type="range" id="rangeInput" name="rangeInput" min="0" max="100">
+                <output name="amount" for="rangeInput">0</output>
+    
+                </fieldset>
+                
+                <fieldset>
+                <legend>Q2 Clarity</legend>
+                <input type="range" id="rangeInput2" name="rangeInput2" min="0" max="100">
+                <output name="amount2" for="rangeInput2">0</output> 
+                </fieldset>
+                
+                <fieldset>
+                <legend>Q3 Useful</legend>
+                <input type="range" id="rangeInput3" name="rangeInput3" min="0" max="100">
+                <output name="amount3" for="rangeInput3">0</output>
+                </fieldset>
+                
+                <fieldset>
+                <legend>Q4 Overall</legend>
+                <input type="range" id="rangeInput4" name="rangeInput4" min="0" max="100">
+                <output name="amount4" for="rangeInput4">0</output>
+                </fieldset>
+            
+            <fieldset>
+                <legend>Comments</legend>
+                <textarea rows="5" cols="30" name="comments">Enter comments here...</textarea>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Calculate Average</legend>
+                <input type="submit" value="CALCULATE" name="calcAvgButton"/>
+                <input type="reset" value="CLEAR" name="clearButton"/>
+            </fieldset>
+                
+        </form>     
+    </body>
+</html>
